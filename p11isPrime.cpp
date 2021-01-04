@@ -8,30 +8,6 @@ bool isPrime(int n)
 {
     if (n == 1)
         return false;
-    for (int i = 2; i < n; i++)
-    {
-        if (n % i == 0)
-            return false;
-    }
-    return true;
-}
-
-bool isPrimeRoot(int n)
-{
-    if (n == 1)
-        return false;
-    for (int i = 2; i * i < n; i++)
-    {
-        if (n % i == 0)
-            return false;
-    }
-    return true;
-}
-
-bool isPrimeE(int n)
-{
-    if (n == 1)
-        return false;
     if (n == 2 || n == 3)
         return true;
 
@@ -42,6 +18,7 @@ bool isPrimeE(int n)
             return false;
     return true;
 }
+
 // Driver code
 int main()
 {
@@ -50,9 +27,5 @@ int main()
     cout << "Enter a Num : ";
     cin >> n;
     g = isPrime(n);
-    r = isPrimeRoot(n);
-    e = isPrimeE(n);
     cout << " is prime : " << g << endl;
-    cout << " is primeRoot : " << r << endl;
-    cout << " is primeE : " << e << endl;
 }
