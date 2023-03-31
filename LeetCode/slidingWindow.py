@@ -23,8 +23,7 @@ def maxProfit(self, prices: List[int]) -> int:
 #M:O(N) T:O(N)
 def lengthOfLongestSubstring(self, s: str) -> int:
     charSet=set()
-    l=0
-    res=0
+    l,res=0,0
     for r in range(len(s)):
         while s[r] in charSet:
             charSet.remove(s[l])
@@ -32,3 +31,6 @@ def lengthOfLongestSubstring(self, s: str) -> int:
         charSet.add(s[r])
         res=max(res,r-l+1)
     return res
+
+#3. Longest Substring Without Repeating Characters
+#M:O(N) T:O(N)
