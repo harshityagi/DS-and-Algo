@@ -1,3 +1,9 @@
+#--------- GFG ---------
+#Largest Element in an Array
+def largestElement(self, nums: List[int]) -> List[int]:
+    
+    while()
+
 #1920. Build Array from Permutation
 #M:O(1) T:O(N)
 def buildArray(self, nums: List[int]) -> List[int]:
@@ -24,7 +30,6 @@ def buildArray(self, nums: List[int]) -> List[int]:
         # extract just the final b values
         for i in range(len(nums)):
             nums[i] = nums[i] // q
-        
         return nums
 
 
